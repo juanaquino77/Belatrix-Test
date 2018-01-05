@@ -1,0 +1,19 @@
+<h2>{{type}}</h2>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Código Padre</th>
+            <th scope="col">Descripción Padre</th>
+        </tr>
+    </thead>
+    <tbody *ngFor = 'let city of this.getPlace()'>
+        <tr *ngFor = 'let nada of city'>
+                <td>{{nada.code}}</td>
+                <td>{{nada.name}}</td>   
+                <td>{{nada.fatherCode}}</td>
+                <td>{{nada.fatherDesciption}}</td>
+            </tr>
+    </tbody>
+</table>
