@@ -6,14 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
  
 import { AppComponent } from './app.component';
-import { Localidad } from './localidad/localidad.component';
+import { Location } from './location/location.component';
 import { Place } from './place/place.component';
 
 import { PapaParseModule } from 'ngx-papaparse';
 
 import { AngularSplitModule } from 'angular-split';
 import {FileService} from './app.service';
-import {LocalidadService} from './services/localidad.service';
+import {LocationService} from './services/location.service';
 
  
  
@@ -26,13 +26,13 @@ import {LocalidadService} from './services/localidad.service';
   ],
   declarations: [
     AppComponent,
-    Localidad,
+    Location,
     Place  
   ],
   providers: [
    FileService, 
-   LocalidadService,
-   Localidad
+   LocationService,
+   Location
   ],
   bootstrap: [ AppComponent ]
 })
