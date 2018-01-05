@@ -8,12 +8,12 @@
             <th scope="col">Descripción Padre</th>
         </tr>
     </thead>
-    <tbody *ngFor = 'let city of this.getArrayPlace()'>
-        <tr *ngFor = 'let place of city'>
-                <td>{{place.code}}</td>
-                <td>{{place.name}}</td>   
-                <td>{{place.fatherCode}}</td>
-                <td>{{place.fatherDesciption}}</td>
+    <tbody *ngFor = 'let city of this.getPlace()'>
+        <tr *ngFor = 'let nada of city'>
+                <td>{{nada.code}}</td>
+                <td>{{nada.name}}</td>   
+                <td>{{nada.fatherCode}}</td>
+                <td>{{nada.fatherDesciption}}</td>
             </tr>
     </tbody>
 </table>
