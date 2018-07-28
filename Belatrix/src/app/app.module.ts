@@ -32,7 +32,7 @@ import {LocationService} from './services/location.service';
   providers: [
    FileService, 
    LocationService,
-   Location
+   Location, 
   ],
   bootstrap: [ AppComponent ]
 })
